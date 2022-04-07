@@ -18,9 +18,8 @@
 .logo {
     display: flex;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 5%;
 }
-
 
 .header {
     display: flex;
@@ -30,25 +29,20 @@
     align-content: center;
 }
 
-.navBar {
-    text-align: center;
-
-}
-
-.navBar ul {
+.header ul {
     display: flex;
     align-items: center;
-    padding: 70px;
+    padding: 3%;
     list-style: none;
 }
-.navBar ul li a {
+.header ul li a {
     text-decoration: none;
     list-style: none;
     color: #772323;
     font-family: 'Patrick Hand', cursive;
     letter-spacing: 2px;
     font-weight: bolder;
-    font-size: xx-large;
+    font-size: 40px;
     padding: 30px;
     margin: 10px;
 }
@@ -62,35 +56,34 @@
 }
 
 .section__imagenes {
-    
     background-color: #772323;
     padding: 60px 60px;
-    width: 830px;
-    font-family: 'Patrick Hand', cursive;
-    letter-spacing: 2px;
-    font-weight: bolder;
-    font-size: xx-large;
+    width: 55%;
     background-color: #772323;
     justify-items: center;
-
 }
 
-.section__texto-encima1 {
+.section__imagenes img {
+    margin-left: 7%;
+}
+
+.section__imagenes h2{
     position: relative;
-    width: 643px;
-    height: 100px;
+    width: 60%;
     color: #f5f5f5;
-    font-size: 75px;
+    font-size: 100px;
     font-style: italic;
-    margin-top: -100px;
-    padding: 0px 30px 20px 20px;
+    font-weight: bolder;
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 2px;
+    margin: -8% 15% 0% 15%;
 }
 
 
 /*sliders*/
 .section__slider {
     background-color: #ecd9c6;
-    width: 800px;
+    width: 35%;
     font-family: 'Patrick Hand', cursive;
     letter-spacing: 2px;
     font-weight: bolder;
@@ -98,7 +91,7 @@
 
 }
 
-.section__slider-text {
+.section__slider h2 {
     border-style: ridge;
     background-color: #ecd9c6;
     color: #772323;
@@ -126,6 +119,7 @@ ul.slider li {
 
 ul.slider li img{
     object-fit: cover;
+    margin-left: -25%;
 }
 
 ul.slider li:first-child {
@@ -173,6 +167,8 @@ ul.slider li:target {
 }
 
 .section__slider a{   
+    display: flex;
+    justify-content: center;
     color: #ffe6e6;
     text-decoration: none;
     text-align: center;
@@ -180,13 +176,11 @@ ul.slider li:target {
     border: #ffe6e6;
     border-radius: 5px;
     font-family: 'Patrick Hand', cursive;
-    font-size: 35px;
+    font-size: 40px;
+    width: 40%;
+    margin-left: 30%;
 }
 
-.productos {
-    display: flex;
-    justify-content: center;
-}
 
 /*descripción del proyecto*/
 .descripcion {
@@ -203,7 +197,7 @@ ul.slider li:target {
     transition: background-color 1s linear;
 }
 
-.texto1 h1 {
+.descripcion h1 {
     padding: 50px 0px;
     font-size: 100px;
     font-weight: 1000;
@@ -214,7 +208,7 @@ ul.slider li:target {
 }
 
 /*Este texto va para la izquierda en columna*/
-.texto1 h3 {
+.descripcion h3 {
     font-size: 60px;
     font-weight: 700;
     text-align: center;
@@ -223,30 +217,7 @@ ul.slider li:target {
     color: #ffe6e6;
 }
 
-.texto1 p {
-    padding: 15px 100px;
-    font-size: 35px;
-    font-weight: 400;
-    text-align: justify;
-    line-height: 1.5;
-    font-family: 'Patrick Hand', cursive;
-    letter-spacing: 1px;
-    color: #ffe6e6;
-    text-indent: 40px;
-}
-
-/*Este texto va para la derecha en columna*/
-.texto2 h3 {
-    padding-top: 50px;
-    font-size: 60px;
-    font-weight: 700;
-    text-align: center;
-    font-family: 'Patrick Hand', cursive;
-    letter-spacing: 5px;
-    color: #ffe6e6;
-}
-
-.texto2 p {
+.descripcion p {
     padding: 15px 100px;
     font-size: 35px;
     font-weight: 400;
@@ -267,11 +238,9 @@ ul.slider li:target {
     font-family: 'Patrick Hand', cursive;
     text-align: center;
     letter-spacing: 5px;
-    margin: 10px;
-    width: 100%;
+    width: 80%;
     font-size: 30px;
-    box-sizing: border-box;
-    grid-column: 1/3;
+    margin-left: 10%;
 }
 
 .contacto ul {
@@ -286,9 +255,6 @@ ul.slider li:target {
    
 }
 
-.mapa h3 {
-    text-align: center;
-}
 
 .footer {
     font-family: 'Patrick Hand', cursive;
