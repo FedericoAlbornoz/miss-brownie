@@ -200,7 +200,7 @@ ul.slider li:target {
 .descripcion:hover {
     background-color: #772323;
     -webkit-transition: background-color 1s linear;
-    transition: background-color 1s linear;
+    transition: background-color 1.5s linear;
 }
 
 .texto1 h1 {
@@ -411,7 +411,7 @@ ul.slider li:target {
 .brownies img:hover {
     height: 800px;
     width: 400px;
-    transition: all 1s;
+    transition: all 2s;
 }
 
 .brownies p {
@@ -432,7 +432,7 @@ ul.slider li:target {
 .cookies img:hover {
     height: 400px;
     width: 600px;
-    transition: all 1s;
+    transition: all 2s;
 }
 
 .cookies p {
@@ -454,7 +454,7 @@ ul.slider li:target {
 .cakes img:hover {
     height: 500px;
     width: 600px;
-    transition: all 2s;
+    transition: all 1s;
 }
 
 .cakes p {
@@ -685,7 +685,7 @@ ul.slider li:target {
 .especial1:hover{
     -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
     box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-    transition: all 1s;
+    transition: all 2s;
     background-color: #ecd9c6;
     color: #772323;
 }
@@ -693,7 +693,7 @@ ul.slider li:target {
 .especial2:hover{
     -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
     box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-    transition: all 1s;
+    transition: all 2s;
     background-color: #ecd9c6;
     color: #772323;
 }
@@ -701,7 +701,7 @@ ul.slider li:target {
 .especial3:hover{
     -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
     box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-    transition: all 1s;
+    transition: all 2s;
     background-color: #ecd9c6;
     color: #772323;
 }
@@ -709,7 +709,7 @@ ul.slider li:target {
 .especial4:hover{
     -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
     box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-    transition: all 1s;
+    transition: all 2s;
     background-color: #ecd9c6;
     color: #772323;
 }
@@ -717,7 +717,7 @@ ul.slider li:target {
 .especial5:hover{
     -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
     box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-    transition: all 1s;
+    transition: all 2s;
     background-color: #ecd9c6;
     color: #772323;
 }
