@@ -179,7 +179,7 @@ ul.slider li:target {
 .descripcion:hover {
     background-color: #772323;
     -webkit-transition: background-color 1s linear;
-    transition: background-color 1s linear;
+    transition: background-color 1.5s linear;
 }
 
 .descripcion h1 {
@@ -269,6 +269,139 @@ ul.slider li:target {
 
 /*-------------------------Estilo Nosotros----------------------------*/
 
+.producto__brownies {
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-size: x-large;
+    color: #ecd9c6;
+} 
+
+.producto__cookies{
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-size: x-large;
+    color: #ecd9c6;
+    background-color: #772323;  
+} 
+
+.producto__cakes{
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-size: x-large;
+    color: #ecd9c6;    
+    background-color: #772323;
+} 
+
+.brownies {
+    background-color: #772323;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.brownies img:hover {
+    height: 800px;
+    width: 400px;
+    transition: all 2s;
+}
+
+.brownies p {
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    font-size: x-large;
+    color: #ecd9c6;
+}
+
+.cookies {
+    background-color: #772323;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cookies img:hover {
+    height: 400px;
+    width: 600px;
+    transition: all 2s;
+}
+
+.cookies p {
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    font-size: x-large;
+    color: #ecd9c6;
+}
+
+.cakes {
+    background-color: #772323;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cakes img:hover {
+    height: 500px;
+    width: 600px;
+    transition: all 1s;
+}
+
+.cakes p {
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    font-size: x-large;
+    color: #ecd9c6;
+}
+
+/*comienza grid de galería*/
+.section__galeria {
+    background-color: #ecd9c6;
+    display: grid;
+    grid-template-columns: repeat (2, 100px);
+    grid-row: repeat (7, 100px);
+    gap: 10px;
+}
+
+.especiales__title {
+    display: flex;
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 2px;
+    font-size: x-large;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #aa806f;
+    color: white;
+    padding: 50px;
+    margin: 20px 85px;
+}
+
+.especiales__title a{
+    text-decoration: underline;
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 2px;
+    font-size: x-large;
+    color: white;
+}
+
+/*Estilo Nosotros*/
+.container__nosotros {
+    display: grid;
+    grid-template-columns: 950px 950px;
+    grid-row: 450px 1fr 1fr 1fr;
+    justify-items: center;
+    width: 90%;
+    max-width: 1900px;
+}
 
 .main {
     display: flex;
@@ -543,7 +676,7 @@ ul.slider li:target {
 .especial1:hover {
     -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
     box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-    transition: all 1s;
+    transition: all 2s;
     background-color: #ecd9c6;
     color: #772323;
 }
@@ -551,7 +684,7 @@ ul.slider li:target {
 .especial2:hover {
     -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
     box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-    transition: all 1s;
+    transition: all 2s;
     background-color: #ecd9c6;
     color: #772323;
 }
@@ -559,7 +692,7 @@ ul.slider li:target {
 .especial3:hover {
     -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
     box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-    transition: all 1s;
+    transition: all 2s;
     background-color: #ecd9c6;
     color: #772323;
 }
@@ -567,7 +700,7 @@ ul.slider li:target {
 .especial4:hover{
     -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
     box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-    transition: all 1s;
+    transition: all 2s;
     background-color: #ecd9c6;
     color: #772323;
 }
@@ -575,7 +708,7 @@ ul.slider li:target {
 .especial5:hover{
     -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
     box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-    transition: all 1s;
+    transition: all 2s;
     background-color: #ecd9c6;
     color: #772323;
 }
