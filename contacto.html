@@ -4,32 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Miss Brownie</title>
     <link rel="shortcut icon" href="./LOGO.png">
-    <link rel="stylesheet" href="./estilo/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inspiration&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inspiration&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./estilo/estilos.css">
 </head>
     <body>
         <header class="header">
-            <nav> <!---------------menu navegación---------------->
-                <div class="logo">
-                    <img src="./LOGO.png" alt="Logo" width="300" height="300">
+            <nav class="navbar navbar-expand-lg navbar-red bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="./LOGO.png" alt="Logo" width="300px"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="./index.html">Inicio</a>
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                        <a class="nav-link" href="./ediciones-especiales.html">Ediciones Especiales</a>
+                        <a class="nav-link" href="#">Contacto</a>
+                    </div>
+                    </div>
                 </div>
-                <div>
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./nosotros.html">Nosotros</a></li>
-                        <li><a href="./productos.html">Productos</a></li>
-                        <li><a href="./ediciones-especiales.html">Especiales</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-                </div>
-            </nav>
+                </nav>
         </header>
             <div class="contact">
                 <h1>¡Contactanos!</h1>
@@ -40,25 +44,24 @@
                     <h3>Hacé click en el ícono y hablanos por WhatsApp.</h3>
                     <a href="https://wa.me/5491136063607">WhatsApp</a>
                 </div>
-                <br>
-                
+                <hr>
                 <div class="contact__form">
-                    <h3>O completá el siguiente formulario y contactanos por nuestro sitio web. A la brevedad, te estaremos contactando.</h3>
-                    <form action="enviar_php">
-                        <fieldset class="information">
-                            <ol>
-                                <li><legend>Datos Personales</legend></li>
-                                <li><label for="nombre-y-apellido">Nombre y Apellido</label></li>
-                                <li><input type="text" id="nombre" placeholder="Ingrese su nombre y apellido" required></li>
-                                <li><label for="mail">Email</label></li>
-                                <li><input type="text" id="mail" placeholder="Ingrese su email" required></li>
-                                <li><label for="multi">Comentario</label></li>
-                                <li><textarea name="multi" id="multi" cols="30" rows="5" placeholder="Ingrese su comentario" required></textarea></li>
-                                <li><input type="submit" value="Enviar ahora"></li>
-                                <li><input type="reset" value="Borrar todo"></li>
-                            </ol>
-                        </fieldset>
-                    </form>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y Apellido">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="input">
+                        <input type="submit" value="Enviar ahora">
+                        <input type="reset" value="Borrar todo">
+                    </div>
                 </div>
             </div>
             <br>
@@ -67,5 +70,7 @@
             </div>
             
     <footer class="footer">©2012-2022 Miss Brownie Pastelería de Autor - Desarrollado por Federico Albornoz</footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
