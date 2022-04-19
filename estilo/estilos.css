@@ -3,17 +3,6 @@
     margin: 0;
 }
 
-.navbar {
-    justify-content: end;
-    font-size: 1.6rem;
-    color: #772323; 
-    letter-spacing: 10px;
-    font-weight: bolder;
-    font-family: 'Patrick Hand', cursive;
-    margin: 0px 200px;
-    background-color: #fff;
-}
-
 .container-fluid {
     background-color: #fff;
     text-decoration: none;
@@ -36,7 +25,6 @@
     color: #772323;
     margin: 0px 30px;
     font-size: 25px;
-    
 }
 
 
@@ -48,19 +36,13 @@
 .section__main {
     display: flex;
     width: 100%;
-    margin-left: 8%;
+    justify-content: center;
+    align-items: center;
+    background-color: #772323;
 }
 
 .section__imagenes {
-    background-color: #772323;
-    padding: 60px 60px;
-    width: 55%;
-    background-color: #772323;
-    justify-items: center;
-}
-
-.section__imagenes img {
-    margin-left: 7%;
+    padding: 73px 130px;
 }
 
 .section__imagenes h2{
@@ -71,7 +53,7 @@
     font-weight: bolder;
     font-family: 'Patrick Hand', cursive;
     letter-spacing: 2px;
-    margin-left: 25%;
+    text-align: center;
 }
 
 /*descripción del proyecto*/
@@ -120,15 +102,22 @@
 /*contacto + mapa de index.html + footer */
 .contacto {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #3f3f3f;
     color: #ecd9c6;
     font-family: 'Patrick Hand', cursive;
     text-align: center;
     letter-spacing: 5px;
-    width: 80%;
     font-size: 30px;
-    margin-left: 10%;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacto ul li a {
+    font-size: 3rem;
 }
 
 .contacto ul {
@@ -154,11 +143,9 @@
     display: flex;
     flex-direction: column;
     background-color: #3f3f3f;
-    width: 90%;
     align-items: center;    
     justify-content: space-evenly;
     height: 100%;
-    margin-left: 5%;
     text-align: center;
 }
 
@@ -169,154 +156,18 @@
     font-family: 'Patrick Hand', cursive;
     letter-spacing: 5px;
     text-align: center;
-    width: 80%;
 }
 
 /*-------------------------Estilo Nosotros----------------------------*/
-
-.producto__brownies {
-    text-align: center;
-    font-family: 'Patrick Hand', cursive;
-    letter-spacing: 2px;
-    font-weight: bolder;
-    font-size: x-large;
-    color: #ecd9c6;
-} 
-
-.producto__cookies{
-    text-align: center;
-    font-family: 'Patrick Hand', cursive;
-    letter-spacing: 2px;
-    font-weight: bolder;
-    font-size: x-large;
-    color: #ecd9c6;
-    background-color: #772323;  
-} 
-
-.producto__cakes{
-    text-align: center;
-    font-family: 'Patrick Hand', cursive;
-    letter-spacing: 2px;
-    font-weight: bolder;
-    font-size: x-large;
-    color: #ecd9c6;    
-    background-color: #772323;
-} 
-
-.brownies {
-    background-color: #772323;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-}
-
-.brownies img:hover {
-    height: 800px;
-    width: 400px;
-    transition: all 2s;
-}
-
-.brownies p {
-    font-family: 'Patrick Hand', cursive;
-    letter-spacing: 2px;
-    font-weight: lighter;
-    font-size: x-large;
-    color: #ecd9c6;
-}
-
-.cookies {
-    background-color: #772323;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-}
-
-.cookies img:hover {
-    height: 400px;
-    width: 600px;
-    transition: all 2s;
-}
-
-.cookies p {
-    font-family: 'Patrick Hand', cursive;
-    letter-spacing: 2px;
-    font-weight: lighter;
-    font-size: x-large;
-    color: #ecd9c6;
-}
-
-.cakes {
-    background-color: #772323;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.cakes img:hover {
-    height: 500px;
-    width: 600px;
-    transition: all 1s;
-}
-
-.cakes p {
-    font-family: 'Patrick Hand', cursive;
-    letter-spacing: 2px;
-    font-weight: lighter;
-    font-size: x-large;
-    color: #ecd9c6;
-}
-
-/*comienza grid de galería*/
-.section__galeria {
-    background-color: #ecd9c6;
-    display: grid;
-    grid-template-columns: repeat (2, 100px);
-    grid-row: repeat (7, 100px);
-    gap: 10px;
-}
-
-.especiales__title {
-    display: flex;
-    font-family: 'Patrick Hand', cursive;
-    letter-spacing: 2px;
-    font-size: x-large;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color: #aa806f;
-    color: white;
-    padding: 50px;
-    margin: 20px 85px;
-}
-
-.especiales__title a{
-    text-decoration: underline;
-    font-family: 'Patrick Hand', cursive;
-    letter-spacing: 2px;
-    font-size: x-large;
-    color: white;
-}
-
-/*Estilo Nosotros*/
-.container__nosotros {
-    display: grid;
-    grid-template-columns: 950px 950px;
-    grid-row: 450px 1fr 1fr 1fr;
-    justify-items: center;
-    width: 90%;
-    max-width: 1900px;
-}
-
 .main {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-image: url(../Fondo\ website1.jpg);
     background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom:50px;
     height: 500px;
     width: 100%;
 }
@@ -327,75 +178,71 @@
     letter-spacing: 10px;
     font-weight: bolder;
     font-size: 140px;
-    margin-top: 125px;
 }
 
 .body {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 750px 1fr;
+    justify-items: center;
     padding: 3%;
     margin: 2%;
     background-color: #f7f1e9;
-    align-items: center;
+    gap: 20px;
 }
 
 .main__1 {
-    color: #ecd9c6;
+    grid-column: 1/3;
+    grid-row: 1/2;
     background-color: #772323;
-    font-family: 'Patrick Hand', cursive;
-    letter-spacing: 2px;
-    font-weight: lighter;
-    height: 550px;
-    width: 75%;
-}
-
-.main__1 img {
-    margin: 50px 0px -50px 150px;
+    text-align: center;
+    width: 60%;
+    padding: 40px;
 }
 
 .main__1 h2 {
-    margin: -340px 0px 0px 630px;
     font-size: 60px;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    color: #ecd9c6;
 }
 
-.main__1 p{
-    position: relative;
+.main__1 p {
+    font-size: 30px;
     text-indent: 30px;
     text-align: justify;
-    width: 60%;
-    margin-left: 475px;
-    font-size: 30px;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    color: #ecd9c6;    
 }
-
 
 .main__2 {
-    color: #772323;
-    background-color: #ecd9c6;
-    font-family: 'Patrick Hand', cursive;
-    letter-spacing: 2px;
-    font-weight: lighter;
-    margin-top: 50px;
-    height: 700px;
-    width: 87%;
-
-}
-
-.main__2 img {    
-    margin-left: 70%;
-    margin-top: 5%;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    text-align: center;
+    width: 60%;
+    background-color: #caada1;
+    padding: 40px;
 }
 
 .main__2 h2 {
-    margin: -460px 0px 0px 300px;
     font-size: 60px;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    color: #772323;
 }
 
 .main__2 p {
-    width: 53%;
-    margin-left: 100px;
     font-size: 30px;
-    text-align: justify;
     text-indent: 30px;
+    text-align: justify;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    color: #772323;
 }
 
 /*-------------------------------Estilo Productos----------------------------*/
@@ -431,7 +278,8 @@
     font-weight: lighter;
     font-size: 30px;
     color: #ecd9c6;
-    margin: 30px;
+    padding: 20px;
+    justify-content: center;
 }
 
 .brownies {
@@ -441,16 +289,12 @@
     justify-content: space-around;
 }
 
-
-
 .cookies {
     background-color: #772323;
     text-align: center;
     display: flex;
     justify-content: space-around;
 }
-
-
 
 .cakes {
     background-color: #772323;
@@ -461,7 +305,29 @@
     gap: 102px;
 }
 
+.brownies img{
+    transition: transform 1s;
+}
 
+.brownies img:hover {
+    transform: scale(1.2);
+}
+
+.cookies img{
+    transition: transform 1s;
+}
+
+.cookies img:hover {
+    transform: scale(1.2);
+}
+
+.cakes img{
+    transition: transform 1s;
+}
+
+.cakes img:hover {
+    transform: scale(1.2);
+}
 
 .especiales__title {
     display: flex;
@@ -490,6 +356,8 @@
 .especiales {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: 'Patrick Hand', cursive;
     letter-spacing: 2px;
     font-weight: lighter;
@@ -512,8 +380,8 @@
     font-weight: bolder;
 }
 
-.especiales__imgtxt {
-    margin-top: 115px;
+.especiales h1 {
+    font-size: 6.5rem;
 }
 
 .especiales__txt {
@@ -531,7 +399,7 @@
     grid-template-columns: 1fr 1fr 2fr;
     grid-row: 1fr 1fr;
     gap: 60px;
-    margin: 25px 70px 50px;
+    margin: 50px;
     font-size: 30px;
     color: #ecd9c6;
     text-align: center;
@@ -631,6 +499,7 @@
 
 .contact__links {
     display: flex;
+    align-items: center;
     background-color: #ecd9c6;
     font-family: 'Patrick Hand', cursive;
     letter-spacing: 3px;
@@ -641,11 +510,15 @@
 
 .contact__whatsapp {
     text-align: center;
-    margin: 200px 90px;
 }
 
 .contact__whatsapp h3 {
     font-size: 50px;
+}
+
+.contact__whatsapp a {
+    font-size: 5rem;
+    color: #772323;
 }
 
 .contact__form {
@@ -657,149 +530,68 @@
 
 .input {
     font-size: 10px;
-    margin: 25px;
+    margin: 30px;
     font-size: 20px;
 }
 
 
 
 /*Media Queries*/
-@media (min-width: 1440PX) and (max-width: 1900px) {
-    
-    .header {
-        width: 100%;
-        margin-left: -8%;
-        text-align: center;
-    }
-    
-
-    /*-----------------Home------------------*/
-    
-    
+@media (min-width: 1440px) and (max-width: 1940px) {
     .section__imagenes img {
-        margin-left: 0%;
-        width: 100%;
+        margin-top: 9%;
     }
 
     .section__imagenes h2 {
-        width: 70%;
-        font-size: 80px;
-        margin-left: 25%;
-    }
-
-       
-    /*-----------------Nosotros------------------*/
-
-    .main__1 h2 {
-        margin: -370px 0px 0px 575px;
-        font-size: 40px;
-    }
-
-    .main__1 p {
-        width: 40%;
-        font-size: 30px;
-    }
-
-    .main__2 h2 {
-        font-size: 40px;
-    }
-
-    .main__2 p {
-        width: 60%;
-        font-size: 30px;
+        width: 100%;
+        font-size: 75px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1439px) {
-          
-    /*-----------------------------------Home------------------------------*/
+
+
+@media (min-width: 992px) and (max-width: 1440px) {
+      
+    /*-----------------Home------------------*/
+    .navbar-brand img{
+        width: 200px;
+    }
+
+    .navbar-nav a{
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+
     .section__main {
+        display: flex;
         flex-direction: column;
-        margin: 0%;
+        align-items: center;
+        margin: 0px 10px;
     }
 
-    .section__imagenes {
-        width: 92%;
+    .row {
+        flex-direction: column;
     }
-
-    .section__imagenes img {
-        width: 92%;
-    }
-
-    .section__imagenes h2 {
-        font-size: 70px;
-        width: 80%;
-        margin: 0% 20%;
-    }
-
-    #carouselExampleCaptions {
-        margin: 1% 17%;
-    } 
-
-    .descripcion {
-        width: 85%;
-    }
-
-    .contacto {
-        margin-left: 7%;
-    }
-
-    /*------------------------Nosotros-----------------------*/
-
-    .main {
-        width: 100%;
-    }
-
+       
+    /*-----------------Nosotros------------------*/
     .main h1 {
-        font-size: 84px;
+        font-size: 80px;
     }
 
     .body {
-        width: 100%;
+        grid-template-rows: 900px 1fr;
     }
 
-    .main__1 {
-        height: 50%;
+    .body h2 {
+        font-size: 40px;
     }
 
-    .main__1 h2 {
-        font-size: 50px;
-        margin: 10% 30% 2%;
-        width: 50%;
+    .body p {
+        font-size: 30px;
     }
 
-    .main__1 p {
-        width: 84%;
-        margin: 0% 7% 4%;
-    }
 
-    .main__2 {
-        width: 100%;
-        height: 100%;
-    }
-
-    .main__2 img {
-        margin: 7% 30% 0%;
-    }
-
-    .main__2 h2 {
-        font-size: 50px;
-        margin: 0% 30% 2%;
-        width: 50%;
-    }
-
-    .main__2 p {
-        width: 90%;
-        margin: 2% 5%;
-    }
-
-    .contacto2 {
-        width: 80%;
-        margin: 2% 8%;
-    }
-
-    /*----------------------Productos---------------------*/
-
+    /*-----------------------------------Productos------------------------------*/
     .section__galeria {
         width: 100%;
         margin-bottom: 5%;
@@ -822,12 +614,7 @@
         width: 85%;
     }
 
-    /*----------------------Especiales---------------------*/
-
-    .especiales {
-        width: 90%;
-    }
-
+/*-----------------------------------Especiales-----------------------------------*/
     .especiales__img {
         width: 100%;
         height: 50%;
@@ -841,13 +628,13 @@
 
     .especiales__txt {
         width: 50%;
-        margin-left: 25%;
     }
 
     .especiales__galeria {
         grid-template-columns: 1fr 1fr 2fr;
         grid-row: 1fr 1fr 1fr;
     }
+
     .especial1 {
         grid-column: 1/3;
         grid-row: 1/2;
@@ -867,136 +654,74 @@
         grid-column: 3/5;
         grid-row: 2/3;
     }
+
     .especial5 {
         grid-column: 3/5;
         grid-row: 1/2;
     }
 
-    /*----------------------Contacto---------------------*/
+     /*----------------------Contacto---------------------*/
     
-    .contact {
+     .contact {
         width: 100%;
     }
 
     .contact__links {
         flex-direction: column;
         width: 100%;
-    }
-
-    .contact__form {
-        margin-left: 26%;
+        padding: 50px;
     }
 }
 
-@media (min-width: 425px) and (max-width: 767px) {
-    .header {
-        margin-left: -34%;
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    /*-----------------Home------------------*/
+    .container-fluid {
+        flex-direction: row;
+        justify-content: flex-start;
     }
     
-  
-    /*----------------------Home--------------------*/
+    .navbar-toggler {
+        font-size: 6em;
+        color: #772323;
+    }
+
+    .navbar-nav a{
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
 
     .section__main {
+        display: flex;
         flex-direction: column;
-        margin-left: 0%;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 10px;
     }
 
-    .section__imagenes {
-        width: 100%;
+    .row {
+        flex-direction: column;
     }
 
-    .section__imagenes img {
-        width: 100%;
-    }
-
-    .section__imagenes h2 {
-        font-size: 57px;
-        width: 80%;
-    }
-
-    .descripcion {
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .descripcion h1 {
-        width: 100%;
-        font-size: 60px;
-    }
-
-    .descripcion h3 {
-        width: 100%;
-        font-size: 40px;
-    }
-
-    .descripcion p {
-        width: 90%;
-        font-size: 20px;
-    }
-
-    .footer {
-        width: 75%;
-    }
-
-    /*---------------------Nosotros------------------*/
-
-    .main {
-        width: 100%;
-    }
-
-    .main h1 {
-        text-align: center;
-        font-size: 115px;
-        margin-top: 5%;
+     /*-----------------Nosotros------------------*/
+     .main h1 {
+        font-size: 70px;
     }
 
     .body {
-        width: 96%;
+        grid-template-rows: 850px 1fr;
     }
 
     .main__1 {
-        height: 50%;
-        width: 100%;
+        width: 80%;
+    }
+    
+    .main__2  {
+        width: 80%;
     }
 
-    .main__1 img {
-        margin: 50px 0px -50px 45px;
-    }
-
-    .main__1 h2 {
-        font-size: 44px;
-        margin: 15% 27% 2%;
-        width: 56%;
-    }
-
-    .main__1 p {
-        width: 95%;
-        margin: 0% 2% 4%;
-    }
-
-    .main__2 {
-        width: 100%;
-        height: 100%;
-    }
-
-    .main__2 img {
-        margin: 7% 11% 0%;
-    }
-
-    .main__2 h2 {
-        font-size: 44px;
-        margin: 0% 13% 2%;
-        width: 75%;
-    }
-
-    .main__2 p {
-        width: 94%;
-        margin: 0% 2% 4%;
-    }
-
-     /*---------------------Productos------------------*/
-
-     .section__galeria {
+    /*-----------------------------------Productos------------------------------*/
+    .section__galeria {
         width: 100%;
         margin-bottom: 5%;
     }
@@ -1015,48 +740,38 @@
     }
 
     .especiales__title {
-        width: 54%;
-        font-size: 25px;
-        text-align: center;
+        width: 85%;
     }
 
-    /*---------------------Especiales------------------*/
-
-    .especiales {
-        width: 100%;
-    }
-
+    /*-----------------------------------Especiales-----------------------------------*/
     .especiales__img {
-        width: 90%;
+        width: 100%;
         height: 50%;
-        margin-left: 5%;
     }
 
     .especiales h1 {
-        font-size: 45px;
+        font-size: 50px;
         width: 100%;
-        letter-spacing: 10px;
-        margin-left: -7%;
+        letter-spacing: 20px;
     }
 
     .especiales__txt {
-        width: 92%;
-        font-size: 20px;
-        margin-left: 4%;
+        width: 50%;
     }
 
     .especiales__galeria {
         grid-template-columns: 1fr 1fr 2fr;
         grid-row: 1fr 1fr 1fr;
     }
+
     .especial1 {
-        grid-column: 1/5;
+        grid-column: 1/3;
         grid-row: 1/2;
     }
 
     .especial2 {
-        grid-column: 1/5;
-        grid-row: 5/6;
+        grid-column: 1/3;
+        grid-row: 2/3;
     }
 
     .especial3 {
@@ -1065,17 +780,189 @@
     }
 
     .especial4 {
-        grid-column: 1/5;
-        grid-row: 4/5;
-    }
-
-    .especial5 {
-        grid-column: 1/5;
+        grid-column: 3/5;
         grid-row: 2/3;
     }
 
-    /*----------------------Contacto---------------------*/
+    .especial5 {
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
+
+     /*----------------------Contacto---------------------*/
     
+     .contact {
+        width: 100%;
+    }
+
+    .contact__links {
+        flex-direction: column;
+        width: 100%;
+        padding: 50px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    /*-----------------Home------------------*/
+    .navbar-brand img{
+        width: 170px;
+    }
+    
+    .container-fluid {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .navbar-toggler {
+        font-size: 5em;
+        color: #772323;
+    }
+
+    .navbar-nav a{
+        font-size: 25px;
+        letter-spacing: 0px;
+    }
+
+    .section__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section__imagenes {
+        padding: 10px;
+    }
+
+    .section__imagenes h2 {
+        font-size: 50px;
+    }
+
+    .carousel-item img {
+        width: 100%;
+    }
+
+    .descripcion {
+        margin: 40px 5px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row h1 {
+        font-size: 50px;
+    }
+
+    .row h3 {
+        font-size: 35px;
+    }
+
+    .row p {
+        font-size: 25px;
+    }
+
+    /*-----------------Nosotros------------------*/
+    .main h1 {
+        width: 90%;
+        font-size: 90px;
+        text-align: center;
+    }
+
+    .body {
+        grid-template-rows: 900px 1fr;
+    }
+
+    .main__1 {
+        width: 100%;
+    }
+
+    .main__2  {
+        width: 100%;
+    }
+
+    .body h2 {
+        font-size: 35px;
+    }
+
+    .body p {
+        text-align: center;
+        font-size: 25px;
+    }
+
+
+
+    /*-----------------------------------Productos------------------------------*/
+    .section__galeria {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .brownies {
+        flex-direction: column;
+    }
+
+    .cookies {
+        flex-direction: column;
+    }
+
+    .cakes {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .especiales__title {
+        width: 85%;
+    }
+
+    /*-----------------------------------Especiales-----------------------------------*/
+    .especiales__img {
+        width: 100%;
+        height: 50%;
+    }
+
+    .especiales h1 {
+        font-size: 50px;
+        width: 100%;
+        letter-spacing: 15px;
+    }
+
+    .especiales__txt {
+        width: 50%;
+    }
+
+    .especiales__galeria {
+        grid-template-columns: 1fr 1fr;
+        grid-row: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .especial1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .especial2 {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    .especial3 {
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+
+    .especial4 {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    .especial5 {
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+
+    /*----------------------Contacto---------------------*/
+
     .contact {
         width: 100%;
     }
@@ -1083,9 +970,10 @@
     .contact__links {
         flex-direction: column;
         width: 100%;
+        padding: 50px;
     }
 
     .contact__form {
-        width: 59%;
+        width: 90%;
     }
 }
