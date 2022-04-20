@@ -1,0 +1,24 @@
+header {
+    nav {
+        .container-fluid {
+            background-color: #fff;
+            text-decoration: none;
+            list-style: none;
+            color: #772323;
+            font: { 
+                family: 'Patrick Hand', cursive;
+                weight: bolder;
+            }
+            letter-spacing: 5px;
+        }
+            & .collapse {
+                justify-content: center;
+            }
+            
+            & .navbar-nav a{
+                    color: #772323;
+                    margin: 0px 30px;
+                    font-size: 25px;
+                }
+    }
+}

@@ -5,8 +5,8 @@ header nav .container-fluid {
   list-style: none;
   color: #772323;
   font-family: 'Patrick Hand', cursive;
-  letter-spacing: 5px;
   font-weight: bolder;
+  letter-spacing: 5px;
 }
 
 header nav .collapse {
@@ -19,6 +19,41 @@ header nav .navbar-nav a {
   color: #772323;
   margin: 0px 30px;
   font-size: 25px;
+}
+
+/*----------------------------Contacto Pie de Página----------------------------*/
+.contacto2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #3f3f3f;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 100%;
+  text-align: center;
+}
+
+.contacto2 a {
+  color: #ecd9c6;
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Patrick Hand', cursive;
+  letter-spacing: 5px;
+}
+
+.footer {
+  font-family: 'Patrick Hand', cursive;
+  font-style: italic;
+  color: gray;
 }
 
 /*----------------------------Home----------------------------*/
@@ -66,8 +101,8 @@ header nav .navbar-nav a {
 .descripcion h1 {
   font-size: 100px;
   font-weight: 1000;
-  text-align: center;
   font-family: 'Patrick Hand', cursive;
+  text-align: center;
   letter-spacing: 10px;
   color: #fdd086;
   margin: 2%;
@@ -76,8 +111,8 @@ header nav .navbar-nav a {
 .descripcion h3 {
   font-size: 60px;
   font-weight: 700;
-  text-align: center;
   font-family: 'Patrick Hand', cursive;
+  text-align: center;
   letter-spacing: 5px;
   color: #ffe6e6;
 }
@@ -85,9 +120,9 @@ header nav .navbar-nav a {
 .descripcion p {
   font-size: 35px;
   font-weight: 400;
+  font-family: 'Patrick Hand', cursive;
   text-align: justify;
   line-height: 1.5;
-  font-family: 'Patrick Hand', cursive;
   letter-spacing: 1px;
   color: #ffe6e6;
   text-indent: 40px;
@@ -104,9 +139,9 @@ header nav .navbar-nav a {
   background-color: #3f3f3f;
   color: #ecd9c6;
   font-family: 'Patrick Hand', cursive;
+  font-size: 30px;
   text-align: center;
   letter-spacing: 5px;
-  font-size: 30px;
 }
 
 .contacto .redes {
@@ -131,41 +166,6 @@ header nav .navbar-nav a {
   color: #ecd9c6;
 }
 
-.footer {
-  font-family: 'Patrick Hand', cursive;
-  color: gray;
-  font-style: italic;
-}
-
-/*----------------------------Contacto Pie de Página----------------------------*/
-.contacto2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #3f3f3f;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  height: 100%;
-  text-align: center;
-}
-
-.contacto2 a {
-  color: #ecd9c6;
-  text-decoration: none;
-  font-size: 30px;
-  font-family: 'Patrick Hand', cursive;
-  letter-spacing: 5px;
-  text-align: center;
-}
-
 /*----------------------------Nosotros----------------------------*/
 .main {
   display: -webkit-box;
@@ -188,8 +188,8 @@ header nav .navbar-nav a {
 
 .main h1 {
   color: white;
-  font-family: 'Patrick Hand', cursive;
   letter-spacing: 10px;
+  font-family: 'Patrick Hand', cursive;
   font-weight: bolder;
   font-size: 140px;
 }
@@ -261,9 +261,9 @@ header nav .navbar-nav a {
 }
 
 .body .main__2 p {
-  font-size: 30px;
   text-indent: 30px;
   text-align: justify;
+  font-size: 30px;
   font-family: 'Patrick Hand', cursive;
   font-weight: lighter;
   letter-spacing: 2px;
@@ -285,8 +285,8 @@ header nav .navbar-nav a {
 
 .section__galeria h1 {
   text-align: center;
-  font-family: 'Patrick Hand', cursive;
   letter-spacing: 2px;
+  font-family: 'Patrick Hand', cursive;
   font-weight: bolder;
   font-size: 80px;
   color: #772323;
@@ -295,16 +295,16 @@ header nav .navbar-nav a {
 .section__galeria h2 {
   background-color: #772323;
   text-align: center;
-  font-family: 'Patrick Hand', cursive;
   letter-spacing: 2px;
+  font-family: 'Patrick Hand', cursive;
   font-weight: bolder;
   font-size: 50px;
   color: #ecd9c6;
 }
 
 .section__galeria p {
-  font-family: 'Patrick Hand', cursive;
   letter-spacing: 2px;
+  font-family: 'Patrick Hand', cursive;
   font-weight: lighter;
   font-size: 30px;
   color: #ecd9c6;
@@ -388,8 +388,8 @@ header nav .navbar-nav a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: 'Patrick Hand', cursive;
   letter-spacing: 2px;
+  font-family: 'Patrick Hand', cursive;
   font-size: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -409,8 +409,8 @@ header nav .navbar-nav a {
 
 .especiales__title a {
   text-decoration: underline;
-  font-family: 'Patrick Hand', cursive;
   letter-spacing: 2px;
+  font-family: 'Patrick Hand', cursive;
   font-size: 40px;
   color: white;
 }
@@ -430,8 +430,8 @@ header nav .navbar-nav a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Patrick Hand', cursive;
   letter-spacing: 2px;
+  font-family: 'Patrick Hand', cursive;
   font-weight: lighter;
   font-size: x-large;
   background-color: #772323;
@@ -447,8 +447,8 @@ header nav .navbar-nav a {
   color: #f5f5f5;
   text-align: center;
   padding: 50px;
-  font-size: 65px;
   letter-spacing: 50px;
+  font-size: 65px;
   font-weight: bolder;
 }
 
@@ -581,8 +581,8 @@ header nav .navbar-nav a {
   text-align: center;
   font-size: x-large;
   font-family: 'Patrick Hand', cursive;
-  letter-spacing: 2px;
   font-weight: lighter;
+  letter-spacing: 2px;
 }
 
 .contact h1 {
@@ -595,7 +595,7 @@ header nav .navbar-nav a {
   font-size: 40px;
 }
 
-.contact .contact__links {
+.contact__links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -603,36 +603,34 @@ header nav .navbar-nav a {
       -ms-flex-align: center;
           align-items: center;
   background-color: #ecd9c6;
-  font-family: 'Patrick Hand', cursive;
   letter-spacing: 3px;
+  font-family: 'Patrick Hand', cursive;
   font-weight: lighter;
-  color: #772323;
   font-size: 40px;
+  color: #772323;
 }
 
-.contact .contact__whatsapp {
+.contact__links .contact__whatsapp {
   text-align: center;
 }
 
-.contact .contact__whatsapp h3 {
+.contact__links .contact__whatsapp h3 {
   font-size: 50px;
 }
 
-.contact .contact__whatsapp a {
+.contact__links .contact__whatsapp a {
   font-size: 5rem;
   color: #772323;
 }
 
-.contact .contact__form {
+.contact__links .contact__form {
   text-align: center;
   margin: 90px;
   border: #772323 solid 1px;
   width: 50%;
 }
 
-.contact .contact__form input {
-  font-size: 10px;
-  margin: 30px;
+.contact__links .contact__form input {
   font-size: 20px;
 }
 
@@ -1106,14 +1104,14 @@ header nav .navbar-nav a {
     width: 100%;
   }
   .contact__links {
+    width: 100%;
+    padding: 50px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
-    padding: 50px;
   }
   .contact__links .contact__form {
-    width: 90%;
+    width: 100%;
   }
 }
