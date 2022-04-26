@@ -36,8 +36,10 @@
                 </div>
                 </nav>
         </header>
+            <div class="main">
+                <h1>Contactanos</h1>    
+            </div> 
             <div class="contact">
-                <h1>¡Contactanos!</h1>
                 <h2>Elegí la mejor opción para vos y realizá tus consultas.</h2>
             </div>
             <div class="contact__links">
@@ -46,23 +48,25 @@
                     <a href="https://wa.me/5491136063607"><i class="bi bi-whatsapp"></i></a>
                 </div>
                 <hr>
-                <div class="contact__form">
+                <form action="enviar.php" class="contact__form" method="get" enctype="text/plain">
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y Apellido">
+                        <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre y Apellido</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="text" class="form-label">Comentario</label>
+                        <textarea class="form-control" id="text" rows="3"></textarea>
                     </div>
                     <div class="input">
                         <input type="submit" value="Enviar ahora">
                         <input type="reset" value="Borrar todo">
                     </div>
+                </form>
                 </div>
             </div>
             <br>
