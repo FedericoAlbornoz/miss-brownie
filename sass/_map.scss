@@ -53,5 +53,13 @@ h4 {
 }
 
 .cakes {
-    @extend .brownies-alfajores;
+    @extend .brownies-alfajores; 
+
+               img {
+                transition: transform 1s;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+            
 }

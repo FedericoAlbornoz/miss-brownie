@@ -66,6 +66,18 @@ h4 {
           transform: scale(1.2);
 }
 
+.cakes img {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.cakes img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 /*----------------------------Contacto Pie de Página----------------------------*/
 .contacto2 {
   display: -webkit-box;
