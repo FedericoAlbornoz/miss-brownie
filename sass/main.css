@@ -21,6 +21,51 @@ header nav .navbar-nav a {
   font-size: 25px;
 }
 
+/*----------------------------Map - Map-get----------------------------*/
+h1 {
+  font-size: 10em;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 5em;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 4em;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+/*----------------------------Extend----------------------------*/
+.brownies-alfajores, .cakes {
+  background-color: #772323;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.brownies-alfajores img, .cakes img {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.brownies-alfajores img:hover, .cakes img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 /*----------------------------Contacto Pie de Página----------------------------*/
 .contacto2 {
   display: -webkit-box;
@@ -81,8 +126,6 @@ header nav .navbar-nav a {
   color: white;
   letter-spacing: 10px;
   font-family: 'Patrick Hand', cursive;
-  font-weight: bolder;
-  font-size: 140px;
 }
 
 .section__main {
@@ -101,22 +144,75 @@ header nav .navbar-nav a {
 }
 
 .section__main .section__imagenes {
-  padding: 73px 130px;
+  padding: 0px 130px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: #772323;
+  border-radius: 25%;
+  overflow: hidden;
+  -webkit-transform: translatey(0px);
+          transform: translatey(0px);
+  -webkit-animation: float 1.5s ease-in-out infinite;
+          animation: float 1.5s ease-in-out infinite;
+  background-color: #52131c;
+  margin-right: 140px;
 }
 
 .section__main .section__imagenes img {
-  width: 90%;
+  width: 100%;
+  height: auto;
 }
 
 .section__main .section__imagenes h2 {
   width: 100%;
-  color: #f5f5f5;
-  font-size: 82px;
+  color: #ecd9c6;
   font-style: italic;
-  font-weight: bolder;
   font-family: 'Patrick Hand', cursive;
+  font-size: 120px;
   letter-spacing: 2px;
   text-align: center;
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+    -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+    -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+    -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+    -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+    -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+    -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  }
 }
 
 .section__main .carousel-inner {
@@ -137,7 +233,6 @@ header nav .navbar-nav a {
 
 .descripcion h1 {
   font-size: 100px;
-  font-weight: 1000;
   font-family: 'Patrick Hand', cursive;
   text-align: center;
   letter-spacing: 10px;
@@ -146,8 +241,6 @@ header nav .navbar-nav a {
 }
 
 .descripcion h3 {
-  font-size: 60px;
-  font-weight: 700;
   font-family: 'Patrick Hand', cursive;
   text-align: center;
   letter-spacing: 5px;
@@ -176,7 +269,6 @@ header nav .navbar-nav a {
   background-color: #3f3f3f;
   color: #ecd9c6;
   font-family: 'Patrick Hand', cursive;
-  font-size: 30px;
   text-align: center;
   letter-spacing: 5px;
 }
@@ -231,10 +323,8 @@ header nav .navbar-nav a {
   padding: 40px;
 }
 
-.body .main__1 h2 {
-  font-size: 60px;
+.body .main__1 h3 {
   font-family: 'Patrick Hand', cursive;
-  font-weight: lighter;
   letter-spacing: 2px;
   color: #ecd9c6;
 }
@@ -262,10 +352,8 @@ header nav .navbar-nav a {
   padding: 40px;
 }
 
-.body .main__2 h2 {
-  font-size: 60px;
+.body .main__2 h3 {
   font-family: 'Patrick Hand', cursive;
-  font-weight: lighter;
   letter-spacing: 2px;
   color: #772323;
 }
@@ -299,8 +387,6 @@ header nav .navbar-nav a {
   text-align: center;
   letter-spacing: 2px;
   font-family: 'Patrick Hand', cursive;
-  font-weight: bolder;
-  font-size: 50px;
   color: #ecd9c6;
 }
 
@@ -323,29 +409,6 @@ header nav .navbar-nav a {
   margin-top: 50px;
 }
 
-.section__galeria .brownies-alfajores {
-  background-color: #772323;
-  text-align: center;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-}
-
-.section__galeria .brownies-alfajores img {
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-}
-
-.section__galeria .brownies-alfajores img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
 .section__galeria .cookies {
   background-color: #772323;
   text-align: center;
@@ -364,31 +427,8 @@ header nav .navbar-nav a {
 }
 
 .section__galeria .cookies img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
-.section__galeria .cakes {
-  background-color: #772323;
-  text-align: center;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-}
-
-.section__galeria .cakes img {
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-}
-
-.section__galeria .cakes img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .especiales__title {
@@ -397,7 +437,6 @@ header nav .navbar-nav a {
   display: flex;
   letter-spacing: 2px;
   font-family: 'Patrick Hand', cursive;
-  font-size: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -439,8 +478,6 @@ header nav .navbar-nav a {
           align-items: center;
   letter-spacing: 2px;
   font-family: 'Patrick Hand', cursive;
-  font-weight: lighter;
-  font-size: x-large;
   background-color: #772323;
   margin: 1%;
 }
@@ -568,16 +605,13 @@ header nav .navbar-nav a {
   background-color: #772323;
   color: #ecd9c6;
   text-align: center;
-  font-size: x-large;
   font-family: 'Patrick Hand', cursive;
-  font-weight: lighter;
   letter-spacing: 2px;
   margin-top: 30px;
 }
 
 .contact h2 {
   padding: 40px;
-  font-size: 40px;
 }
 
 .contact__links {
@@ -590,22 +624,21 @@ header nav .navbar-nav a {
   background-color: #ecd9c6;
   letter-spacing: 3px;
   font-family: 'Patrick Hand', cursive;
-  font-weight: lighter;
-  font-size: 40px;
-  color: #772323;
+  font-color: #772323;
 }
 
-.contact__links .contact__whatsapp {
+.contact__links .contact__redes {
   text-align: center;
 }
 
-.contact__links .contact__whatsapp h3 {
-  font-size: 50px;
+.contact__links .contact__redes h3 {
+  color: #772323;
 }
 
-.contact__links .contact__whatsapp a {
+.contact__links .contact__redes a {
   font-size: 5rem;
   color: #772323;
+  padding: 20px;
 }
 
 .contact__links .contact__form {
@@ -613,6 +646,8 @@ header nav .navbar-nav a {
   margin: 90px;
   border: #772323 solid 1px;
   width: 80%;
+  font-size: 50px;
+  color: #772323;
 }
 
 .contact__links .contact__form input {
@@ -641,8 +676,14 @@ header nav .navbar-nav a {
         -ms-flex-align: center;
             align-items: center;
   }
+  .section__main .section__imagenes {
+    margin: 50px 0px 20px 10px;
+  }
   .section__main .section__imagenes img {
     width: 100%;
+  }
+  .section__main .section__imagenes h2 {
+    font-size: 80px;
   }
   .descripcion .container .row {
     -webkit-box-orient: vertical;
@@ -666,7 +707,7 @@ header nav .navbar-nav a {
     width: 100%;
     margin-bottom: 5%;
   }
-  .section__galeria .brownies-alfajores p {
+  .section__galeria .brownies-alfajores p, .section__galeria .cakes p {
     height: 100px;
   }
   .section__galeria .cookies {
@@ -683,10 +724,14 @@ header nav .navbar-nav a {
   }
   .especiales__title {
     width: 85%;
+    text-align: center;
   }
   /*-----------------------------------Especiales-----------------------------------*/
   .especiales .especiales__txt {
     width: 50%;
+  }
+  .especiales .especiales__txt h3 {
+    font-size: 70px;
   }
   .especiales .especiales__galeria .especial3 {
     height: 65%;
@@ -726,6 +771,9 @@ header nav .navbar-nav a {
     font-size: 30px;
     letter-spacing: 1px;
   }
+  .main h1 {
+    font-size: 8em;
+  }
   /*----------------------Home---------------------*/
   .section__main {
     display: -webkit-box;
@@ -742,8 +790,15 @@ header nav .navbar-nav a {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .section__main .section__imagenes {
+    margin: 50px 0px 20px 5px;
+    width: 90%;
+  }
   .section__main .section__imagenes img {
     width: 100%;
+  }
+  .section__main .section__imagenes h2 {
+    font-size: 80px;
   }
   .descripcion .container .row {
     -webkit-box-orient: vertical;
@@ -767,13 +822,13 @@ header nav .navbar-nav a {
     width: 100%;
     margin-bottom: 5%;
   }
-  .section__galeria .brownies-alfajores {
+  .section__galeria .brownies-alfajores, .section__galeria .cakes {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
   }
-  .section__galeria .brownies-alfajores p {
+  .section__galeria .brownies-alfajores p, .section__galeria .cakes p {
     height: 100px;
   }
   .section__galeria .cookies {
@@ -788,10 +843,20 @@ header nav .navbar-nav a {
   }
   .especiales__title {
     width: 80%;
+    text-align: center;
+  }
+  .especiales__title h3 {
+    font-size: 40px;
   }
   /*----------------------Ediciones Especiales---------------------*/
   .especiales .especiales__txt {
-    width: 50%;
+    width: 70%;
+  }
+  .especiales .especiales__txt h3 {
+    font-size: 40px;
+  }
+  .especiales .especiales__txt h4 {
+    font-size: 30px;
   }
   .especiales .especiales__galeria {
     -ms-grid-columns: 1fr 1fr 2fr;
@@ -890,7 +955,8 @@ header nav .navbar-nav a {
             justify-content: center;
   }
   .section__main .section__imagenes {
-    padding: 10px;
+    margin: 50px 0px 70px 0px;
+    width: 100%;
   }
   .section__main .section__imagenes img {
     width: 100%;
@@ -930,8 +996,8 @@ header nav .navbar-nav a {
   .body .main__2 {
     width: 90%;
   }
-  .body h2 {
-    font-size: 35px;
+  .body h3 {
+    font-size: 50px;
   }
   .body p {
     text-align: center;
@@ -942,7 +1008,10 @@ header nav .navbar-nav a {
     width: 100%;
     margin-bottom: 5%;
   }
-  .section__galeria .brownies-alfajores {
+  .section__galeria h2 {
+    font-size: 50px;
+  }
+  .section__galeria .brownies-alfajores, .section__galeria .cakes {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -964,9 +1033,18 @@ header nav .navbar-nav a {
     width: 70%;
     text-align: center;
   }
+  .especiales__title h3 {
+    font-size: 40px;
+  }
   /*----------------------Ediciones Especiales---------------------*/
   .especiales .especiales__txt {
     width: 90%;
+  }
+  .especiales .especiales__txt h3 {
+    font-size: 40px;
+  }
+  .especiales .especiales__txt h4 {
+    font-size: 35px;
   }
   .especiales .especiales__galeria {
     -ms-grid-columns: 1fr 1fr;
@@ -1017,6 +1095,12 @@ header nav .navbar-nav a {
   /*----------------------Contacto---------------------*/
   .contact {
     width: 100%;
+  }
+  .contact h2 {
+    font-size: 50px;
+  }
+  .contact h3 {
+    font-size: 40px;
   }
   .contact__links {
     width: 100%;
@@ -1052,7 +1136,7 @@ header nav .navbar-nav a {
     width: 100%;
   }
   .main h1 {
-    font-size: 60px;
+    font-size: 3.5em;
   }
   /*----------------------Home---------------------*/
   .section__main {
@@ -1071,6 +1155,17 @@ header nav .navbar-nav a {
             justify-content: center;
     width: 100%;
     overflow: hidden;
+  }
+  .section__main .section__imagenes {
+    margin: 50px 0px 70px 0px;
+    width: 100%;
+  }
+  .section__main .section__imagenes img {
+    width: 100%;
+  }
+  .section__main .section__imagenes h2 {
+    font-size: 40px;
+    width: 100%;
   }
   .section__main #carouselExampleCaptions img {
     width: 87%;
@@ -1094,6 +1189,9 @@ header nav .navbar-nav a {
   .descripcion .container .row p {
     font-size: 25px;
   }
+  .contacto h3 {
+    font-size: 40px;
+  }
   /*----------------------Nosotros---------------------*/
   .body {
     -ms-grid-rows: 1000px 1fr;
@@ -1105,7 +1203,7 @@ header nav .navbar-nav a {
   .body .main__1 img {
     width: 90%;
   }
-  .body .main__1 h2 {
+  .body .main__1 h3 {
     font-size: 2.5em;
   }
   .body .main__1 p {
@@ -1118,7 +1216,7 @@ header nav .navbar-nav a {
   .body .main__2 img {
     width: 90%;
   }
-  .body .main__2 h2 {
+  .body .main__2 h3 {
     font-size: 2.5em;
   }
   .body .main__2 p {
@@ -1130,7 +1228,11 @@ header nav .navbar-nav a {
     width: 100%;
     margin-bottom: 5%;
   }
-  .section__galeria .brownies-alfajores {
+  .section__galeria h2 {
+    font-size: 40px;
+    margin-top: 15px;
+  }
+  .section__galeria .brownies-alfajores, .section__galeria .cakes {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -1159,13 +1261,18 @@ header nav .navbar-nav a {
     width: 100%;
     margin: 10px 0px;
   }
+  .especiales__title h3 {
+    font-size: 40px;
+  }
   /*----------------------Ediciones Especiales---------------------*/
   .especiales .especiales__txt {
     width: 90%;
   }
-  .especiales .especiales__txt h2 {
-    font-weight: 900;
+  .especiales .especiales__txt h3 {
     font-size: 30px;
+  }
+  .especiales .especiales__txt h4 {
+    font-size: 25px;
   }
   .especiales .especiales__galeria {
     -ms-grid-columns: 1fr 1fr;
@@ -1217,6 +1324,9 @@ header nav .navbar-nav a {
   .contact {
     width: 100%;
   }
+  .contact h2 {
+    font-size: 50px;
+  }
   .contact__links {
     width: 100%;
     padding: 50px;
@@ -1225,7 +1335,11 @@ header nav .navbar-nav a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .contact__links h3 {
+    font-size: 40px;
+  }
   .contact__links .contact__form {
     width: 100%;
+    font-size: 30px;
   }
 }
