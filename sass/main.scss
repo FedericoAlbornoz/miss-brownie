@@ -1,5 +1,5 @@
 @import "navbar";
-@import "map";
+@import "extend";
 @import "piedepagina";
 @import "footer";
 
@@ -22,7 +22,7 @@
         h1 {
             color: white;
             letter-spacing: 10px;
-            font-family: 'Patrick Hand', cursive;
+            font: bolder 10em 'Patrick Hand', cursive;            
         }
     }
     
@@ -37,13 +37,15 @@
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
     
     .section__imagenes {
-        padding: 0px 130px;
         box-sizing: border-box;
         border: #772323;
         border-radius: 25%;
         overflow: hidden;
         transform: translatey(0px);
         animation: float 1.5s ease-in-out infinite;
+        height: 35%;
+        width: 40%;
+
         img { width: 100%; height: auto; }    
         background-color: #52131c;
         margin-right: 140px;    
@@ -54,7 +56,8 @@
             font: {
                     style: italic;
                     family: 'Patrick Hand', cursive;
-                    size: 120px;
+                    size: 100px;
+                    weight: 900;
                 }
             letter-spacing: 2px;
             text-align: center;
@@ -78,6 +81,10 @@
     
     .carousel-inner {
         width: 515px;
+
+        h3 {
+            font: 600 4em 'Patrick Hand', cursive;            
+        }
     }
 }
 
@@ -98,6 +105,10 @@
     .video__pastafrola {
         text-align: end;
     }
+
+    iframe {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    }
 }
 
 .descripcion {
@@ -114,6 +125,7 @@
             font: { 
                 size: 100px;
                 family: 'Patrick Hand', cursive;
+                weight: 900;
             }
             text-align: center;
             letter-spacing: 10px;
@@ -122,7 +134,7 @@
         }
 
         h3 {
-            font-family: 'Patrick Hand', cursive;
+            font: 600 4em 'Patrick Hand', cursive;            
             text-align: center;
             letter-spacing: 5px;
             color: #ffe6e6;
@@ -151,6 +163,10 @@
     font-family: 'Patrick Hand', cursive;
     text-align: center;
     letter-spacing: 5px;
+
+        h3 {
+            font: 600 4em 'Patrick Hand', cursive;            
+        }
 
         .redes {
             display: flex;
@@ -183,6 +199,10 @@
     background-color: #f7f1e9;
     gap: 20px;
 
+    img {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    }
+
           .main__1 {
             grid-column: 1/3;
             grid-row: 1/2;
@@ -193,7 +213,7 @@
             box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 
             h3 {
-                font-family: 'Patrick Hand', cursive;
+                font: 600 4em 'Patrick Hand', cursive;            
                 letter-spacing: 2px;
                 color: #ecd9c6;            
             }
@@ -223,7 +243,7 @@
             box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 
             h3 {
-                font-family: 'Patrick Hand', cursive;
+                font: 600 4em 'Patrick Hand', cursive;            
                 letter-spacing: 2px;
                 color: #772323;
             }
@@ -257,9 +277,10 @@
         h2 {
             background-color: #772323;
             text-align: center;
-        letter-spacing: 2px;
-        font-family: 'Patrick Hand', cursive;
-        color: #ecd9c6;
+            letter-spacing: 2px;
+            font-family: 'Patrick Hand', cursive;
+            color: #ecd9c6;
+            font: 900 5em 'Patrick Hand', cursive;            
         }
         
         p {
@@ -267,20 +288,20 @@
             font: {
             family: 'Patrick Hand', cursive;
             weight: lighter;
-            size: 30px;
+            size: 25px;
             }
             color: #772323;
             background-color: #ecd9c6;
             justify-content: center;
-            width: 100%;
+            width: 95%;
             margin: 40px 0px;
             border-style: double;
             box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-
         }
         
         img {
             margin-top: 50px;
+            box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
         }
         
         .cookies {
@@ -332,6 +353,14 @@
     font-family: 'Patrick Hand', cursive;
     background-color: #772323;
     margin: 1%;
+
+        h3 {
+            font: 600 4em 'Patrick Hand', cursive;            
+        }
+
+        h4 {
+            font: 300 1.5em 'Patrick Hand', cursive;
+        }
 
         .especiales__txt {
             background-color: #ecd9c6;
@@ -397,9 +426,6 @@
                 }
             }
         }      
-              
-        
-                  
 }
 
 /*----------------------------Contacto----------------------------*/
@@ -413,6 +439,7 @@
 
         h2 {
             padding: 40px;
+            font: 900 5em 'Patrick Hand', cursive;            
         }
 }
 
@@ -431,6 +458,7 @@
 
                 h3 {
                     color: #772323;
+                    font: 600 4em 'Patrick Hand', cursive;            
                 }
 
                 a {
@@ -450,7 +478,7 @@
             box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 
             input {
-                font-size: 20px;            
+                font-size: 20px;
             }
         }
     }
@@ -484,6 +512,7 @@
 
         .section__imagenes {
             margin: 50px 0px 20px 10px;
+            width: 70%;
                img {
                     width: 100%;
                 }

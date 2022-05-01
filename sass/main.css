@@ -21,26 +21,11 @@ header nav .navbar-nav a {
   font-size: 25px;
 }
 
-/*----------------------------Map - Map-get----------------------------*/
-h1 {
-  font-size: 10em;
-  font-weight: bolder;
-}
-
-h2 {
-  font-size: 5em;
-  font-weight: 900;
-}
-
-h3 {
-  font-size: 4em;
-  font-weight: 600;
-}
-
-h4 {
-  font-size: 1.5em;
-  font-weight: 300;
-}
+/*----------------------------Variables----------------------------*/
+/*$h1: 10em bolder;
+$h2: 5em 900;
+$h3: 4em 600;
+$h4: 1.5em 300;
 
 /*----------------------------Extend----------------------------*/
 .brownies-alfajores, .cakes {
@@ -138,7 +123,7 @@ h4 {
 .main h1 {
   color: white;
   letter-spacing: 10px;
-  font-family: 'Patrick Hand', cursive;
+  font: bolder 10em 'Patrick Hand', cursive;
 }
 
 /*----------------------------Home----------------------------*/
@@ -160,7 +145,6 @@ h4 {
 }
 
 .section__main .section__imagenes {
-  padding: 0px 130px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: #772323;
@@ -170,6 +154,8 @@ h4 {
           transform: translatey(0px);
   -webkit-animation: float 1.5s ease-in-out infinite;
           animation: float 1.5s ease-in-out infinite;
+  height: 35%;
+  width: 40%;
   background-color: #52131c;
   margin-right: 140px;
 }
@@ -184,7 +170,8 @@ h4 {
   color: #ecd9c6;
   font-style: italic;
   font-family: 'Patrick Hand', cursive;
-  font-size: 120px;
+  font-size: 100px;
+  font-weight: 900;
   letter-spacing: 2px;
   text-align: center;
 }
@@ -235,6 +222,10 @@ h4 {
   width: 515px;
 }
 
+.section__main .carousel-inner h3 {
+  font: 600 4em 'Patrick Hand', cursive;
+}
+
 .video {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -262,6 +253,11 @@ h4 {
   text-align: end;
 }
 
+.video iframe {
+  -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+}
+
 .descripcion {
   background-color: #aa806f;
   margin: 40px 35px;
@@ -279,6 +275,7 @@ h4 {
 .descripcion h1 {
   font-size: 100px;
   font-family: 'Patrick Hand', cursive;
+  font-weight: 900;
   text-align: center;
   letter-spacing: 10px;
   color: #fdd086;
@@ -286,7 +283,7 @@ h4 {
 }
 
 .descripcion h3 {
-  font-family: 'Patrick Hand', cursive;
+  font: 600 4em 'Patrick Hand', cursive;
   text-align: center;
   letter-spacing: 5px;
   color: #ffe6e6;
@@ -316,6 +313,10 @@ h4 {
   font-family: 'Patrick Hand', cursive;
   text-align: center;
   letter-spacing: 5px;
+}
+
+.contacto h3 {
+  font: 600 4em 'Patrick Hand', cursive;
 }
 
 .contacto .redes {
@@ -355,6 +356,11 @@ h4 {
   gap: 20px;
 }
 
+.body img {
+  -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+}
+
 .body .main__1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -371,7 +377,7 @@ h4 {
 }
 
 .body .main__1 h3 {
-  font-family: 'Patrick Hand', cursive;
+  font: 600 4em 'Patrick Hand', cursive;
   letter-spacing: 2px;
   color: #ecd9c6;
 }
@@ -402,7 +408,7 @@ h4 {
 }
 
 .body .main__2 h3 {
-  font-family: 'Patrick Hand', cursive;
+  font: 600 4em 'Patrick Hand', cursive;
   letter-spacing: 2px;
   color: #772323;
 }
@@ -438,19 +444,20 @@ h4 {
   letter-spacing: 2px;
   font-family: 'Patrick Hand', cursive;
   color: #ecd9c6;
+  font: 900 5em 'Patrick Hand', cursive;
 }
 
 .section__galeria p {
   letter-spacing: 2px;
   font-family: 'Patrick Hand', cursive;
   font-weight: lighter;
-  font-size: 30px;
+  font-size: 25px;
   color: #772323;
   background-color: #ecd9c6;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
+  width: 95%;
   margin: 40px 0px;
   border-style: double;
   -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
@@ -459,6 +466,8 @@ h4 {
 
 .section__galeria img {
   margin-top: 50px;
+  -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
 }
 
 .section__galeria .cookies {
@@ -534,6 +543,14 @@ h4 {
   font-family: 'Patrick Hand', cursive;
   background-color: #772323;
   margin: 1%;
+}
+
+.especiales h3 {
+  font: 600 4em 'Patrick Hand', cursive;
+}
+
+.especiales h4 {
+  font: 300 1.5em 'Patrick Hand', cursive;
 }
 
 .especiales .especiales__txt {
@@ -625,6 +642,7 @@ h4 {
 
 .contact h2 {
   padding: 40px;
+  font: 900 5em 'Patrick Hand', cursive;
 }
 
 .contact__links {
@@ -646,6 +664,7 @@ h4 {
 
 .contact__links .contact__redes h3 {
   color: #772323;
+  font: 600 4em 'Patrick Hand', cursive;
 }
 
 .contact__links .contact__redes a {
@@ -693,6 +712,7 @@ h4 {
   }
   .section__main .section__imagenes {
     margin: 50px 0px 20px 10px;
+    width: 70%;
   }
   .section__main .section__imagenes img {
     width: 100%;
