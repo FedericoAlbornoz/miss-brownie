@@ -21,12 +21,6 @@ header nav .navbar-nav a {
   font-size: 25px;
 }
 
-/*----------------------------Variables----------------------------*/
-/*$h1: 10em bolder;
-$h2: 5em 900;
-$h3: 4em 600;
-$h4: 1.5em 300;
-
 /*----------------------------Extend----------------------------*/
 .brownies-alfajores, .cakes {
   background-color: #772323;
