@@ -116,11 +116,6 @@
     margin: 40px 35px;
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 
-    &:hover {
-        background-color: #772323;
-        -webkit-transition: background-color 1s linear;
-        transition: background-color 1.0s linear;    
-    }
         h1 {
             font: { 
                 size: 100px;
@@ -183,6 +178,7 @@
                     font-size: 3rem;
                     text-decoration: none;
                     color: #ecd9c6;
+                    
                 }
             }
         }
@@ -192,7 +188,7 @@
 .body {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 750px 1fr;
+    grid-template-rows: 800px 1fr;
     justify-items: center;
     padding: 3%;
     margin: 2%;
@@ -286,15 +282,15 @@
         p {
             letter-spacing: 2px;
             font: {
-            family: 'Patrick Hand', cursive;
-            weight: lighter;
-            size: 25px;
-            }
+                family: 'Patrick Hand', cursive;
+                weight: lighter;
+                size: 25px;
+                }
             color: #772323;
             background-color: #ecd9c6;
             justify-content: center;
             width: 95%;
-            margin: 40px 0px;
+            margin: 40px 8px;
             border-style: double;
             box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
         }
@@ -303,20 +299,15 @@
             margin-top: 50px;
             box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
         }
-        
-        .cookies {
-            background-color: #772323;
-            text-align: center;
-            display: flex;
-            justify-content: space-around;
-
-                img {
-                    transition: transform 1s;
-                    &:hover {
-                        transform: scale(1.1);
-                    }
-                }   
-        }        
+                        
+        .card__price {
+            color: #ecd9c6;
+            padding: 5px 20px;
+            background-color: #3f3f3f;
+            border-radius: 30px;
+            width: 25%;
+            margin-left: 38%;
+        } 
     }
 
 .especiales__title {
@@ -417,12 +408,26 @@
                 .card__title {
                     margin-bottom: 20px;
                     align-self: end;
+                    font-weight: 900;
                 }
 
                 .card__info {
                     display: flex;
-                    justify-content: center;
-                    font-size: 25px;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .card__text {
+                        display: flex;
+                        font-size: 25px;
+                    }
+
+                    .card__price {
+                        color: #ecd9c6;
+                        width: 17%;
+                        padding: 5px 20px;
+                        background-color: #3f3f3f;
+                        border-radius: 30px;
+                    }
                 }
             }
         }      
@@ -564,17 +569,22 @@
         
         .brownies-alfajores {
             p {
-                height: 100px;
+                height: 75px;
             }
         }
 
         .cookies {
-            flex-direction: column;
+            grid-template-rows: 1fr;
         }
 
         .cakes {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        .card__price {
+            width: 25%;
+            margin-left: 35%;
         }
     }
 
@@ -589,8 +599,20 @@
             width: 50%;
 
             h3 {
-                font-size: 70px;
+                font-size: 60px;
             }
+        }
+
+        .especiales__galeria {
+            .card {      
+                .card__content {
+                    .card__info {
+                        .card__price {
+                            width: 30%;
+                            }
+                        }
+                    }
+                }
         }
     }
 
@@ -727,11 +749,17 @@
         }
 
         .cookies {
-            flex-direction: column;
+            grid-template-columns: 1fr;
         }
 
         .cakes {
             grid-template-columns: 1fr;
+        }
+
+        .card__price {
+            width: 50%;
+            margin-left: 25%;
+            height: 0px;
         }
     }
 
@@ -923,14 +951,21 @@
         .brownies-alfajores {
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
 
-        }
         .cookies {
-            flex-direction: column;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
         }
+
         .cakes {
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        .card__price {
+            width: 30%;
+            margin-left: 35%;
         }
     }
 
@@ -960,6 +995,15 @@
         .especiales__galeria {
             display: grid;
             grid-template-columns: 1fr;
+            .card {      
+                .card__content {
+                    .card__info {
+                        .card__price {
+                            width: 30%;
+                            }
+                        }
+                    }
+                }
         }
     }
 
@@ -1041,7 +1085,7 @@
         }
 
         #carouselExampleCaptions img {
-            width: 87%;
+            width: 100%;
         }
     }
 
@@ -1166,7 +1210,8 @@
 
         }
         .cookies {
-            flex-direction: column;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
 
             img {
                 width: 90%;
@@ -1179,6 +1224,11 @@
             img {
                 width: 90%;
             }
+        }
+
+        .card__price {
+            width: 50%;
+            margin-left: 25%;
         }
     }
 
@@ -1206,11 +1256,21 @@
                 }
             }
 
-        .especiales__galeria {
-            display: grid;
-            grid-template-columns: 1fr;
-        }
-    }   
+            
+            .especiales__galeria {
+                display: grid;
+                grid-template-columns: 1fr;
+                .card {      
+                    .card__content {
+                        .card__info {
+                            .card__price {
+                                width: 50%;
+                                }
+                            }
+                        }
+                    }
+            }
+        }   
 
     /*----------------------Contacto---------------------*/
     .contact {
@@ -1234,6 +1294,277 @@
                 width: 100%;
                 font-size: 30px;
             }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+    .header {
+        .navbar {
+            .container-fluid {
+                justify-content: center;
+                
+                img {
+                    width: 250px;
+                }
+
+                button {
+                    font-size: 5em;
+                    color: #772323;            
+                }
+
+                a {
+                    font-size: 25px;
+                    letter-spacing: 0px;            
+                }
+            }
+        }
+    }
+
+    .main {
+        width: 100%;
+
+        h1 {
+            font-size: 3em;
+        }
+    }
+
+    /*----------------------Home---------------------*/
+    .section__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        overflow: hidden;
+        
+        .section__imagenes {
+            margin: 50px 0px 70px 0px;
+            width: 100%;
+               img {
+                    width: 100%;
+                }
+
+                h2 {
+                    font-size: 40px;
+                    width: 100%;
+                }
+        }
+
+        #carouselExampleCaptions img {
+            width: 100%;
+        }
+    }
+
+    .video {
+        width:320px;
+        margin: 30px auto auto auto;
+ 
+        .video__galletitas{
+        height:0%;
+        width: 100%;
+        max-width:375px; 
+        padding-top:56.25%;
+        position:relative;
+        }
+
+        iframe{
+        position:absolute;
+        height:100%;
+        width:100%;
+        top:0px;
+        left:0px;
+        }
+
+        .video__pastafrola{
+        height:0%;
+        width: 100%;
+        max-width:560px; 
+        padding-top:56.25%; 
+        position:relative;
+        }
+
+        iframe{
+        position:absolute;
+        height:100%;
+        width:100%;
+        top:0px;
+        left:0px;
+        }
+    }
+    
+    .descripcion {
+        margin: 40px 5px;
+
+        .container {
+            .row {
+                flex-direction: column;
+
+                h1 {
+                    font-size: 50px;
+                }
+
+                h3 {
+                    font-size: 35px;
+                    margin-top: 30px;
+                }
+
+                p {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    .contacto {
+        h3 {
+            font-size: 40px;
+        }
+    }
+
+    /*----------------------Nosotros---------------------*/
+    .body {
+        grid-template-rows: 1000px 1fr;
+
+        .main__1 {
+            width: 100%;
+
+            img {
+                width: 90%;
+            }
+
+            h3 {
+                font-size: 2.5em;
+            }
+    
+            p {
+                text-align: center;
+                font-size: 1.8em;    
+            }
+        }
+
+        .main__2 {
+            width: 100%;
+            
+            img {
+                width: 90%;
+            }
+
+            h3 {
+                font-size: 2.5em;
+            }
+    
+            p {
+                text-align: center;
+                font-size: 1.8em;    
+            }
+        }
+    }
+
+    /*----------------------Productos---------------------*/
+    .section__galeria {
+        width: 100%;
+        margin-bottom: 5%;
+
+        h2 {
+            font-size: 40px;
+            margin-top: 15px;
+        }
+
+        .brownies-alfajores {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;   
+        }
+
+        .cookies {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+
+            img {
+                width: 90%;
+            }
+        }
+        .cakes {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            img {
+                width: 90%;
+            }
+        }
+
+        .card__price {
+            width: 50%;
+            margin-left: 25%;
+        }
+    }
+
+    .especiales__title {
+        text-align: center;
+        width: 100%;
+        margin: 10px 0px;
+
+        h3 {
+            font-size: 40px;
+        }
+    }
+
+    /*----------------------Ediciones Especiales---------------------*/
+    .especiales {               
+        .especiales__txt {
+                width: 95%;
+                text-align: center;
+                padding: 30px;
+
+                h3 {
+                    font-size: 25px;
+                }
+
+                h4 {
+                    font-size: 25px;
+                }
+            }
+
+        .especiales__galeria {
+            display: grid;
+            grid-template-columns: 1fr;
+                .card {      
+                    .card__content {
+                        .card__info {
+                            .card__price {
+                                width: 50%;
+                                }
+                            }
+                        }
+                    }
+            }
+        }
+     
+
+    /*----------------------Contacto---------------------*/
+    .contact {
+        width: 100%;
+
+        h2 {
+            font-size: 40px;
+        }
+    }
+
+    .contact__links {
+        width: 100%;
+        padding: 30px;
+        flex-direction: column;
+
+        .contact__redes {
+
+            h3 {
+                font-size: 30px;
+            }
+        }
+
+        .contact__form {
+            width: 100%;
+            font-size: 25px;
+        }   
     }
 }
 

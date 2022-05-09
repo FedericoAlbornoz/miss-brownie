@@ -22,7 +22,7 @@ header nav .navbar-nav a {
 }
 
 /*----------------------------Extend----------------------------*/
-.brownies-alfajores, .cakes {
+.brownies-alfajores, .cookies, .cakes {
   background-color: #772323;
   text-align: center;
   display: -ms-grid;
@@ -33,28 +33,21 @@ header nav .navbar-nav a {
       grid-template-rows: 1fr 1fr;
 }
 
-.brownies-alfajores img, .cakes img {
+.brownies-alfajores img, .cookies img, .cakes img {
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
 }
 
-.brownies-alfajores img:hover, .cakes img:hover {
+.brownies-alfajores img:hover, .cookies img:hover, .cakes img:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-.cakes img {
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-}
-
-.cakes img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.cookies {
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
 }
 
 /*----------------------------Contacto Pie de Página----------------------------*/
@@ -259,13 +252,6 @@ header nav .navbar-nav a {
           box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
 }
 
-.descripcion:hover {
-  background-color: #772323;
-  -webkit-transition: background-color 1s linear;
-  -webkit-transition: background-color 1.0s linear;
-  transition: background-color 1.0s linear;
-}
-
 .descripcion h1 {
   font-size: 100px;
   font-family: 'Patrick Hand', cursive;
@@ -341,8 +327,8 @@ header nav .navbar-nav a {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 750px 1fr;
-      grid-template-rows: 750px 1fr;
+  -ms-grid-rows: 800px 1fr;
+      grid-template-rows: 800px 1fr;
   justify-items: center;
   padding: 3%;
   margin: 2%;
@@ -452,7 +438,7 @@ header nav .navbar-nav a {
       -ms-flex-pack: center;
           justify-content: center;
   width: 95%;
-  margin: 40px 0px;
+  margin: 40px 8px;
   border-style: double;
   -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
           box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
@@ -464,26 +450,13 @@ header nav .navbar-nav a {
           box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
 }
 
-.section__galeria .cookies {
-  background-color: #772323;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.section__galeria .cookies img {
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-}
-
-.section__galeria .cookies img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.section__galeria .card__price {
+  color: #ecd9c6;
+  padding: 5px 20px;
+  background-color: #3f3f3f;
+  border-radius: 30px;
+  width: 25%;
+  margin-left: 38%;
 }
 
 .especiales__title {
@@ -612,16 +585,35 @@ header nav .navbar-nav a {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
+  font-weight: 900;
 }
 
 .especiales .especiales__galeria .card__content .card__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.especiales .especiales__galeria .card__content .card__info .card__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 25px;
+}
+
+.especiales .especiales__galeria .card__content .card__info .card__price {
+  color: #ecd9c6;
+  width: 17%;
+  padding: 5px 20px;
+  background-color: #3f3f3f;
+  border-radius: 30px;
 }
 
 /*----------------------------Contacto----------------------------*/
@@ -747,20 +739,22 @@ header nav .navbar-nav a {
     width: 100%;
     margin-bottom: 5%;
   }
-  .section__galeria .brownies-alfajores p, .section__galeria .cakes p {
-    height: 100px;
+  .section__galeria .brownies-alfajores p, .section__galeria .cookies p, .section__galeria .cakes p {
+    height: 75px;
   }
   .section__galeria .cookies {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
   }
   .section__galeria .cakes {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+  }
+  .section__galeria .card__price {
+    width: 25%;
+    margin-left: 35%;
   }
   .especiales__title {
     width: 85%;
@@ -771,7 +765,10 @@ header nav .navbar-nav a {
     width: 50%;
   }
   .especiales .especiales__txt h3 {
-    font-size: 70px;
+    font-size: 60px;
+  }
+  .especiales .especiales__galeria .card .card__content .card__info .card__price {
+    width: 30%;
   }
   /*----------------------Contacto---------------------*/
   .contact {
@@ -888,24 +885,27 @@ header nav .navbar-nav a {
     width: 100%;
     margin-bottom: 5%;
   }
-  .section__galeria .brownies-alfajores, .section__galeria .cakes {
+  .section__galeria .brownies-alfajores, .section__galeria .cookies, .section__galeria .cakes {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
   }
-  .section__galeria .brownies-alfajores p, .section__galeria .cakes p {
+  .section__galeria .brownies-alfajores p, .section__galeria .cookies p, .section__galeria .cakes p {
     height: 100px;
   }
   .section__galeria .cookies {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
   .section__galeria .cakes {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .section__galeria .card__price {
+    width: 50%;
+    margin-left: 25%;
+    height: 0px;
   }
   .especiales__title {
     width: 80%;
@@ -1069,23 +1069,27 @@ header nav .navbar-nav a {
   .section__galeria h2 {
     font-size: 50px;
   }
-  .section__galeria .brownies-alfajores, .section__galeria .cakes {
+  .section__galeria .brownies-alfajores, .section__galeria .cookies, .section__galeria .cakes {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
   .section__galeria .cookies {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
   }
   .section__galeria .cakes {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .section__galeria .card__price {
+    width: 30%;
+    margin-left: 35%;
   }
   .especiales__title {
     width: 70%;
@@ -1109,6 +1113,9 @@ header nav .navbar-nav a {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .especiales .especiales__galeria .card .card__content .card__info .card__price {
+    width: 30%;
   }
   /*----------------------Contacto---------------------*/
   .contact {
@@ -1186,7 +1193,7 @@ header nav .navbar-nav a {
     width: 100%;
   }
   .section__main #carouselExampleCaptions img {
-    width: 87%;
+    width: 100%;
   }
   .video {
     width: 375px;
@@ -1282,17 +1289,17 @@ header nav .navbar-nav a {
     font-size: 40px;
     margin-top: 15px;
   }
-  .section__galeria .brownies-alfajores, .section__galeria .cakes {
+  .section__galeria .brownies-alfajores, .section__galeria .cookies, .section__galeria .cakes {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
   .section__galeria .cookies {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
   }
   .section__galeria .cookies img {
     width: 90%;
@@ -1305,6 +1312,10 @@ header nav .navbar-nav a {
   }
   .section__galeria .cakes img {
     width: 90%;
+  }
+  .section__galeria .card__price {
+    width: 50%;
+    margin-left: 25%;
   }
   .especiales__title {
     text-align: center;
@@ -1330,6 +1341,9 @@ header nav .navbar-nav a {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  .especiales .especiales__galeria .card .card__content .card__info .card__price {
+    width: 50%;
+  }
   /*----------------------Contacto---------------------*/
   .contact {
     width: 100%;
@@ -1351,5 +1365,235 @@ header nav .navbar-nav a {
   .contact__links .contact__form {
     width: 100%;
     font-size: 30px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+  .header .navbar .container-fluid {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .navbar .container-fluid img {
+    width: 250px;
+  }
+  .header .navbar .container-fluid button {
+    font-size: 5em;
+    color: #772323;
+  }
+  .header .navbar .container-fluid a {
+    font-size: 25px;
+    letter-spacing: 0px;
+  }
+  .main {
+    width: 100%;
+  }
+  .main h1 {
+    font-size: 3em;
+  }
+  /*----------------------Home---------------------*/
+  .section__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    overflow: hidden;
+  }
+  .section__main .section__imagenes {
+    margin: 50px 0px 70px 0px;
+    width: 100%;
+  }
+  .section__main .section__imagenes img {
+    width: 100%;
+  }
+  .section__main .section__imagenes h2 {
+    font-size: 40px;
+    width: 100%;
+  }
+  .section__main #carouselExampleCaptions img {
+    width: 100%;
+  }
+  .video {
+    width: 320px;
+    margin: 30px auto auto auto;
+  }
+  .video .video__galletitas {
+    height: 0%;
+    width: 100%;
+    max-width: 375px;
+    padding-top: 56.25%;
+    position: relative;
+  }
+  .video iframe {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+  }
+  .video .video__pastafrola {
+    height: 0%;
+    width: 100%;
+    max-width: 560px;
+    padding-top: 56.25%;
+    position: relative;
+  }
+  .video iframe {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+  }
+  .descripcion {
+    margin: 40px 5px;
+  }
+  .descripcion .container .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .descripcion .container .row h1 {
+    font-size: 50px;
+  }
+  .descripcion .container .row h3 {
+    font-size: 35px;
+    margin-top: 30px;
+  }
+  .descripcion .container .row p {
+    font-size: 25px;
+  }
+  .contacto h3 {
+    font-size: 40px;
+  }
+  /*----------------------Nosotros---------------------*/
+  .body {
+    -ms-grid-rows: 1000px 1fr;
+        grid-template-rows: 1000px 1fr;
+  }
+  .body .main__1 {
+    width: 100%;
+  }
+  .body .main__1 img {
+    width: 90%;
+  }
+  .body .main__1 h3 {
+    font-size: 2.5em;
+  }
+  .body .main__1 p {
+    text-align: center;
+    font-size: 1.8em;
+  }
+  .body .main__2 {
+    width: 100%;
+  }
+  .body .main__2 img {
+    width: 90%;
+  }
+  .body .main__2 h3 {
+    font-size: 2.5em;
+  }
+  .body .main__2 p {
+    text-align: center;
+    font-size: 1.8em;
+  }
+  /*----------------------Productos---------------------*/
+  .section__galeria {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .section__galeria h2 {
+    font-size: 40px;
+    margin-top: 15px;
+  }
+  .section__galeria .brownies-alfajores, .section__galeria .cookies, .section__galeria .cakes {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .section__galeria .cookies {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
+  .section__galeria .cookies img {
+    width: 90%;
+  }
+  .section__galeria .cakes {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .section__galeria .cakes img {
+    width: 90%;
+  }
+  .section__galeria .card__price {
+    width: 50%;
+    margin-left: 25%;
+  }
+  .especiales__title {
+    text-align: center;
+    width: 100%;
+    margin: 10px 0px;
+  }
+  .especiales__title h3 {
+    font-size: 40px;
+  }
+  /*----------------------Ediciones Especiales---------------------*/
+  .especiales .especiales__txt {
+    width: 95%;
+    text-align: center;
+    padding: 30px;
+  }
+  .especiales .especiales__txt h3 {
+    font-size: 25px;
+  }
+  .especiales .especiales__txt h4 {
+    font-size: 25px;
+  }
+  .especiales .especiales__galeria {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .especiales .especiales__galeria .card .card__content .card__info .card__price {
+    width: 50%;
+  }
+  /*----------------------Contacto---------------------*/
+  .contact {
+    width: 100%;
+  }
+  .contact h2 {
+    font-size: 40px;
+  }
+  .contact__links {
+    width: 100%;
+    padding: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__links .contact__redes h3 {
+    font-size: 30px;
+  }
+  .contact__links .contact__form {
+    width: 100%;
+    font-size: 25px;
   }
 }

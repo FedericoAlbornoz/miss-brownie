@@ -14,13 +14,11 @@
         }            
 }
 
-.cakes {
-    @extend .brownies-alfajores; 
+.cookies {
+    @extend .brownies-alfajores;
+    grid-template-rows: 1fr;
+}
 
-               img {
-                transition: transform 1s;
-                &:hover {
-                    transform: scale(1.1);
-                }
-            }          
+.cakes {
+    @extend .brownies-alfajores;      
 }
